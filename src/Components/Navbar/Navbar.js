@@ -15,9 +15,7 @@ const Navbar = () => {
           <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
           <Link activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Education</Link>
           <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Skills</Link>
-          <Link activeClass='active' to='experience' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Project</Link>
-
-
+          <Link activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Project</Link>
         </div>
         <button className="desktopMenuBtn" onClick={()=>{
           document.getElementById('contact').scrollIntoView({behavior:'smooth'});
@@ -30,7 +28,7 @@ const Navbar = () => {
           <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>About</Link>
           <Link activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>Education</Link>
           <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>Skills</Link>
-          <Link activeClass='active' to='experience' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>Project</Link>
+          <Link activeClass='active' to='project' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>Project</Link>
           <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className="ListItem"onClick={()=>setshowMenu(false)}>Contact</Link>
         </div>
     </nav>
