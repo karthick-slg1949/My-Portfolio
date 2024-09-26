@@ -71,7 +71,7 @@
     margin: 0.25rem;
     background: rgb(30, 30, 30)
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:721px) {
     .mobmenu{
         display: flex;
     }
