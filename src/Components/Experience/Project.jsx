@@ -12,7 +12,7 @@ const Project = () => {
   return (
 <section id='works'>
     <h2 className='worksTitle'>Project</h2>
-    <span className="workDesc">I take pride in paying attention to the smallest details and making sure that my work is pixel perfect.I am exitedto bring my skills and experience to help business achieve their goals and create a strong online presence.</span><br />
+    <span className="workDesc">I take pride in paying attention to the smallest details and making sure that my work is pixel perfect. I am exited to bring my skills and experience to help business achieve their goals and create a strong online presence.</span><br />
     <div className="worksImgs">
       <a href="https://3ttt-game.netlify.app" target='_blank' rel="noopener noreferrer">
       <img src={TicTacToe} alt="TicTacToe" className="worksImg"/>
