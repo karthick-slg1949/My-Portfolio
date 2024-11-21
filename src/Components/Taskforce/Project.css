@@ -21,22 +21,28 @@
 }
 .worksImgs{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-    max-width: 65rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  object-fit: cover;
 }
+
 .worksImg{
-    object-fit: cover;
-    height: 20rem;
-    margin: 0.5rem;
+    width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .workBtn{
-    margin: 3rem 0;
-    padding: 0.5rem 2.5rem;
-    border: none;
-    background: white;
-    border-radius: 2rem;
-    font-size: 1rem;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+.workBtn:hover {
+    background-color: #f6f9fc;
+  }

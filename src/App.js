@@ -5,7 +5,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import Education from "./Components/Education/Education";
-import Project from "./Components/Experience/Project";
+import TaskForce from './Components/Taskforce/Project'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <About/>
       <Education/>
       <Skills/>
-      <Project/>
+      <TaskForce/>
       <Contact/>
       <Footer/>
 

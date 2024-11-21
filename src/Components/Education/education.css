@@ -21,13 +21,18 @@
     width: 100vw;
     max-width: 80%;
     text-align: left;
+    gap: 20px;
 }
+.educationBar:hover {
+    transform: scale(1.05);
+  }
 .educationBar{
     display: flex;
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
+    transition: transform 0.3s ease;
 }
 .degree{
     color: yellow;
@@ -35,3 +40,29 @@
 .year{
     color: yellow;
 }
+@media (max-width: 768px) {
+    .educationBars {
+      flex-direction: column;
+    }
+  
+    .educationBar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .degree {
+      font-size: 1.5rem;
+    }
+  
+    .institution {
+      font-size: 1rem;
+    }
+  
+    .year {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+    }
+  }
