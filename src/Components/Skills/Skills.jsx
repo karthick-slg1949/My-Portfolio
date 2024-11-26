@@ -1,9 +1,10 @@
 import React from 'react'
 import './skills.css'
-import UIDesign from '../Navbar/Logo/UI.png'
-import WebDesign from '../Navbar/Logo/WEB.png'
-import AppDesign from '../Navbar/Logo/Mobile.png'
-import MernStack from '../Navbar/Logo/Designer.png'
+import UIDesign from '../Navbar/Logo/WEB.png'
+import WebDesign from '../Navbar/Logo/react-removebg-preview.png'
+import AppDesign from '../Navbar/Logo/node-js.png'
+import MernStack from '../Navbar/Logo/library-removebg-preview.png'
+import Mongodb from '../Navbar/Logo/mongodb.png'
  
 const Skills = () => {
   return (
@@ -44,7 +45,7 @@ const Skills = () => {
             </div>
         </div>
         <div className="SkillBar">
-            <img src={MernStack} alt="AppDesign" className="SkillBarImg" />
+            <img src={Mongodb} alt="AppDesign" className="SkillBarImg" />
             <div className="SkillBarText">
                 <h2 className='title'>DataBases</h2>
                 <ul>

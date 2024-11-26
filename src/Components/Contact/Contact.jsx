@@ -1,10 +1,21 @@
 import React, { useRef } from 'react'
 import './Contact.css'
-import Facebook from '../Navbar/Logo/facebook.webp'
-import Youtube from '../Navbar/Logo/youtube2.webp'
-import Instagram from '../Navbar/Logo/instagram23-removebg-preview.png'
-import Twitter from '../Navbar/Logo/twitter2.webp'
 import emailjs from '@emailjs/browser';
+
+import { IconButton, Tooltip } from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+const icons = [
+  { id: "facebook", icon: <FacebookIcon />, label: "Facebook" },
+  { id: "twitter", icon: <TwitterIcon />, label: "Twitter" },
+  { id: "instagram", icon: <InstagramIcon />, label: "Instagram" },
+  { id: "github", icon: <GitHubIcon />, label: "GitHub" },
+  { id: "youtube", icon: <YouTubeIcon />, label: "YouTube" },
+];
 
 const Contact = () => {
     const form = useRef();
@@ -31,12 +42,22 @@ const Contact = () => {
                 <input type="email" className="email" placeholder='Your Email' name='your_email' />
                 <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
                 <button className="submitbtn" type='submit' value='send'>Submit</button>
-                <div className="links">
-                    <img src={Youtube} alt="youtube" className="link" />
-                    <img src={Facebook} alt="facebook" className="link" />
-                    <img src={Instagram} alt="instagram" className="link" />
-                    <img src={Twitter} alt="twitter" className="link" />
-                </div>
+                <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
+                   {icons.map(({ id, icon, label }) => (
+                   <Tooltip title={label} key={id}>
+                   <IconButton
+                   aria-label={label}
+                   style={{
+                   backgroundColor: id === "" ? "#ff4081" : "white",
+                   color: id === "" ? "white" : "",
+                  border: "1px solid #ccc",
+                }}
+                 >
+                {icon}
+                </IconButton>
+               </Tooltip>
+      ))}
+    </div>
             </form>
         </div>
     </section>

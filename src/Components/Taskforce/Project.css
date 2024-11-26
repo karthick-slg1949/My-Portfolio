@@ -1,4 +1,4 @@
-#works{
+/* #works{
     margin: 0 auto;
     min-height: calc(100 - 4rem);
     width: 100vw;
@@ -45,4 +45,104 @@
 }
 .workBtn:hover {
     background-color: #f6f9fc;
-  }
+  } */
+   /* Project.css */
+#works {
+  padding: 50px;
+  background: rgb(30, 30, 30);
+  text-align: center;
+}
+
+.worksTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.workDesc {
+  font-size: 1.2rem;
+ 
+  margin-bottom: 40px;
+}
+
+.worksCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.card:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.workBtn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workBtn:hover {
+  background-color: #005fa3;
+}
+
+.see-more-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
