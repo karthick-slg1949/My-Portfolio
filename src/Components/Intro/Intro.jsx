@@ -1,6 +1,6 @@
 import React from 'react'
 import './intro.css'
-import BG from '../Navbar/Logo/BG.png'
+import BG from '../Navbar/Logo/ram.png'
 import {Link} from 'react-scroll'
 
 const Intro = () => {
